@@ -1,0 +1,76 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.25em;
+}
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.icon {
+    width: 23px;
+}
+
+h1 {
+    font-size: 0.875em;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2em;
+    list-style: none;
+    font-size: 0.75em;
+    font-weight: 600;
+}
+
+/* main */
+
+main {
+    
+}
+
+.bg-image {
+    
+}
+
+.hero-post {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    /* background-image: url('./images/hero-post-bg.png');
+    background-size: cover;
+    background-position: 100% 100%; */
+    object-fit: cover;
+    color: #FFFFFF;
+    padding: 6.250em 1em 1em;
+}
+
+.hero-post h1, .hero-post p{
+    margin: 0;
+}
+
+.hero-post h1 {
+    font-size: 2em;
+}
+
+.source-sans-pro {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/* footer */
