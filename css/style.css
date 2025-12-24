@@ -2,9 +2,20 @@ html,
 body {
     margin: 0;
     padding: 0;
+    /* display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "head"
+        "main"
+        "foot"; */
 }
 
 /* header */
+header {
+    grid-area: head;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -67,6 +78,9 @@ ul {
     color: #FFFFFF;
     padding: 6.250em 1em 1em;
 } */
+main {
+    grid-area: main;
+}
 
 .journal-section {
     background-image: url('../images/hero-post-bg.png');
@@ -82,12 +96,17 @@ ul {
     padding: 6.250em 1em 1em;
 }
 
-.hero-post h1, .hero-post p{
+.hero-post h1, 
+.hero-post p,
+.blog h1,
+.blog p
+{
     margin: 0;
 }
 
 .hero-post h1 {
     font-size: 2em;
+    line-height: 1;
 }
 
 .source-sans-pro {
@@ -98,4 +117,35 @@ ul {
     font-size: 0.75em;
 }
 
+/* Blogs Section */
+
+.blogs-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1em;
+    gap: 2.5rem;
+}
+
+.blog img {
+    width: 100%;
+    height: 232px;
+    object-fit: cover;
+    border-radius: 3px;
+    margin-bottom: 0.5em;
+}
+
+.blog h1 {
+    font-size: 1.5em;
+}
+
+.view-more {
+    text-align: center;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 /* footer */
+footer {
+    grid-area: foot;
+    padding: 1em 1.25em;
+}
