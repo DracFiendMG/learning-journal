@@ -28,6 +28,8 @@ nav {
 }
 
 .logo {
+    text-decoration: none;
+    color: inherit;
     display: flex;
     align-items: center;
     gap: 3px;
@@ -48,6 +50,11 @@ ul {
     list-style: none;
     font-size: 0.75em;
     font-weight: 600;
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* main */
@@ -119,7 +126,7 @@ main {
 
 /* Blogs Section */
 
-.blogs-section {
+.blogs {
     display: grid;
     grid-template-columns: 1fr;
     margin: 1em;
@@ -144,8 +151,20 @@ main {
     text-decoration: underline;
 }
 
+.view-more:hover {
+    cursor: pointer;
+}
+
 /* footer */
 footer {
+    font-size: 0.75em;
     grid-area: foot;
     padding: 1em 1.25em;
+    background-color: #202020;
+    text-align: center;
+    color: #ECECEC;
+}
+
+footer p:first-child {
+    font-weight: 700;
 }
