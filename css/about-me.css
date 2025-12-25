@@ -5,3 +5,34 @@
     object-position: 100% 40%;
     border-radius: 50%;
 }
+
+@media (min-width: 768px) {
+    .hero-post {
+        grid-template-areas: 
+            "intro intro intro"
+            "img img img"
+            ". cont .";
+        margin: auto;
+    }
+
+    .hero-post-intro {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: 
+            "profile ."
+            "profile context"
+            "profile .";
+    }
+
+    .profile-img {
+        grid-area: profile;
+    }
+
+    .introduction {
+        grid-area: context;
+    }
+
+    .hero-post-content h2 {
+        font-size: 1.25em;
+    }
+}

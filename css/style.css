@@ -91,9 +91,15 @@ main {
 }
 
 .journal-section {
+    min-height: 293px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    padding: 0 1em 1em;
     background-image: url('../images/hero-post-bg.png');
     background-size: cover;
     background-position: bottom;
+    transform: scaleX(-1);
     color: #FFFFFF;
 }
 
@@ -101,7 +107,8 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
-    padding: 6.250em 1em 1em;
+    transform: scaleX(-1);
+    /* padding: 6.250em 1em 1em; */
 }
 
 .hero-post h1, 
@@ -172,4 +179,31 @@ footer p:first-child {
 
 footer * {
     margin: 0;
+}
+
+@media (min-width: 768px) {
+    nav {
+        padding: 1em 3.25em;
+    }
+
+    .journal-section {
+        height: 488px;
+        background-position: 100% 75%;
+    }
+
+    .hero-post {
+        padding-top: 0;
+        padding: 0 2rem 2rem;
+        justify-content: flex-end;
+    }
+
+    .hero-post p {
+        max-width: 600px;
+    }
+
+    .blogs {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 3.25em;
+        gap: 2.5rem;
+    }
 }
