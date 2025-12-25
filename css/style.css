@@ -87,6 +87,7 @@ li a {
 } */
 main {
     grid-area: main;
+    padding-bottom: 1em;
 }
 
 .journal-section {
@@ -133,7 +134,7 @@ main {
     gap: 2.5rem;
 }
 
-.blog img {
+.blog img, .hero-post-img {
     width: 100%;
     height: 232px;
     object-fit: cover;
@@ -159,7 +160,7 @@ main {
 footer {
     font-size: 0.75em;
     grid-area: foot;
-    padding: 1em 1.25em;
+    padding: 2.5rem 1.25rem;
     background-color: #202020;
     text-align: center;
     color: #ECECEC;
@@ -167,4 +168,8 @@ footer {
 
 footer p:first-child {
     font-weight: 700;
+}
+
+footer * {
+    margin: 0;
 }

@@ -1,5 +1,48 @@
-h2 {
+.journal-section {
+    background-image: none;
+    color: inherit;
+}
+
+.hero-post {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "intro"
+        "img"
+        "cont"
+        "cont";
+    padding-top: 2em;
+}
+
+.hero-post-intro {
+    grid-area: intro;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.hero-post-img {
+    grid-area: img;
+    height: 191px;
+    object-position: 100% 70%;
+    transform: scaleX(-1);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hero-post-content {
+    grid-area: cont;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.hero-post-content h2 {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.blogs-section h2 {
     font-size: 1em;
     text-align: center;
-    margin: 0;
 }
