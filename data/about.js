@@ -1,6 +1,11 @@
 const about = {
     name: "Sreeram",
+    title: "My new journey as a Scrimba student.",
+    introduction: `Hi there! My name is Sreeram and welcome to my learning journal.`,
     description: "After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.",
+    profileImg: "./images/profile-img.png",
+    profileImgAlt: "",
+    date: "November 10, 2025",
     aboutMe: [
         {
             title: "How I stay committed to learning",

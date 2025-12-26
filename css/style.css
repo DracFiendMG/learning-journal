@@ -130,6 +130,7 @@ main {
 
 .date {
     font-size: 0.75em;
+    text-transform: uppercase;
 }
 
 /* Blogs Section */

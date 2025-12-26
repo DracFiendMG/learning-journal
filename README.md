@@ -20,7 +20,7 @@ Happy Coding!
 
 ## Stretch Goals
 
-- Make it your own
+- Make it your own ✔
 - Add custom images
 - Make the content about your learning experiences
 - Add new pages
