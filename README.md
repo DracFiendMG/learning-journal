@@ -17,3 +17,12 @@ The Fullstack Developer Path aims to teach you everything you need to become a J
 - [Become a Scrimba Pro member](https://scrimba.com/pricing)
 
 Happy Coding!
+
+## Stretch Goals
+
+- Make it your own
+- Add custom images
+- Make the content about your learning experiences
+- Add new pages
+- Display other recent posts after clicking "View More"
+- Responsive navigation displaying a "hamburger menu" on small screens
