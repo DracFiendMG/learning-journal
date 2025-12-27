@@ -23,6 +23,10 @@ function renderBlogView() {
             ${content}
         </div>
     `
+
+    document.querySelector(".projects-section").innerHTML = `
+        <img src="">
+    `
 }
 
 renderBlogView()

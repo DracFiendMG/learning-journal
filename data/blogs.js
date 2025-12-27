@@ -20,14 +20,17 @@ const blogs = [
         gitHubProjects: [
             {
                 title: "Business Card",
+                image: "../images/business-card",
                 url: "https://github.com/DracFiendMG/business-card"
             },
             {
                 title: "Birthday Site",
+                image: "../images/birthday-site",
                 url: "https://github.com/DracFiendMG/birthday-site"
             },
             {
                 title: "Hometown Site",
+                image: "../images/hometown-site",
                 url: "https://github.com/DracFiendMG/hometown-site"
             }
         ]
@@ -50,14 +53,17 @@ const blogs = [
         gitHubProjects: [
             {
                 title: "Basketball Scoreboard",
+                image: "../images/basketball-scoreboard",
                 url: "https://github.com/DracFiendMG/basketball-scoreboard"
             },
             {
                 title: "Password Generator",
+                image: "../images/password-generator",
                 url: "https://github.com/DracFiendMG/password-generator"
             },
             {
                 title: "Unit Converter",
+                image: "../images/unit-converter",
                 url: "https://github.com/DracFiendMG/unit-converter"
             }
         ]
@@ -107,6 +113,7 @@ const blogs = [
         gitHubProjects: [
             {
                 title: "Oldagram - An Instagram Clone",
+                image: "../images/basketball-scoreboard",
                 url: "https://github.com/username/oldagram"
             }
         ]
@@ -128,10 +135,12 @@ const blogs = [
         gitHubProjects: [
             {
                 title: "Meme Generator - Spiderman Edition (Pick your favorite Spiderman)",
+                image: "../images/basketball-scoreboard",
                 url: "https://github.com/DracFiendMG/mememaker"
             },
             {
                 title: "Restaurant Ordering App",
+                image: "../images/restaurant-ordering-app",
                 url: "https://github.com/DracFiendMG/restaurant-ordering-app"
             }
         ]
@@ -154,6 +163,7 @@ const blogs = [
         gitHubProjects: [
             {
                 title: "Learning Journal - Responsive Redesign",
+                image: "../images/basketball-scoreboard",
                 url: "https://github.com/DracFiendMG/learning-journal"
             }
         ]
