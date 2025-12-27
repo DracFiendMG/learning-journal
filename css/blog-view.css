@@ -1,10 +1,11 @@
-.blog-section {
+.blog-view {
     display: grid;
     grid-template-columns: 1em 1fr 1em;
     grid-template-areas: 
         ". headings ."
         ". b-image ."
-        ". content .";
+        ". content ."
+        ". projects .";
 }
 
 .headings {
@@ -22,7 +23,33 @@
     color: #505050;
 }
 
-.projects-section {
-    display: grid;
-    grid-template-columns: 1fr;
+.projects {
+    grid-area: projects;
+    color: #505050;
+}
+
+.projects a {
+    color: blue;
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .blog-section {
+        padding: 0 1rem;
+    }
+
+    .blog-view {
+        grid-template-columns: 2em 1fr 2em;
+        grid-template-areas: 
+            ". headings ."
+            "b-image b-image b-image"
+            ". content ."
+            ". projects .";
+        padding: 0 2rem 2rem;
+    }
+
+    .blog-image {
+        height: 488px;
+        object-fit: cover;
+    }
 }

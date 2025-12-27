@@ -8,30 +8,33 @@ const blogs = [
         title: "HTML & CSS Fundamentals",
         description: "Completed the HTML & CSS Fundamentals module in the Scrimba Full-Stack Developer Career Path. It was an exciting experience that reinforced my understanding of web development basics.",
         content: [
-            "In this module, I learned the foundational building blocks of web development. Starting with HTML, I explored semantic elements like header, nav, main, section, and footer to create well-structured, accessible web pages. I practiced using headings, paragraphs, lists, links, and images to build meaningful content.",
-            "On the CSS side, I discovered how to style elements using selectors, properties, and values. I learned about the box model (margin, border, padding, content), how to use flexbox for layout, and the importance of responsive design principles. Working with colors, fonts, and spacing helped me understand how to create visually appealing designs.",
-            "The hands-on projects were incredibly valuable. Building a Business Card taught me about centering elements and working with borders. The Birthday Site project helped me practice background images and text styling. Finally, the Hometown Site brought everything together, allowing me to create a multi-section webpage with navigation.",
+            "<p>In this module, I learned the foundational building blocks of web development. Starting with HTML, I explored semantic elements like header, nav, main, section, and footer to create well-structured, accessible web pages. I practiced using headings, paragraphs, lists, links, and images to build meaningful content.</p>",
+            "<p>On the CSS side, I discovered how to style elements using selectors, properties, and values. I learned about the box model (margin, border, padding, content), how to use flexbox for layout, and the importance of responsive design principles. Working with colors, fonts, and spacing helped me understand how to create visually appealing designs.</p>",
+            "<p>The hands-on projects were incredibly valuable. Building a Business Card taught me about centering elements and working with borders. The Birthday Site project helped me practice background images and text styling. Finally, the Hometown Site brought everything together, allowing me to create a multi-section webpage with navigation.</p>",
             "<b>Key takeaways:</b>",
-            "<ul><li>Semantic HTML improves accessibility and SEO",
-            "<li>CSS Flexbox makes layout much easier",
+            "<ul><li>Basic HTML structure and elements are essential for building web pages",
+            "<li>Reverse engineering existing websites is a great way to learn",
             "<li>The cascade and specificity determine which styles apply",
             "<li>Practice through building real projects is essential for learning<ul>"
         ],
         gitHubProjects: [
             {
                 title: "Business Card",
-                image: "../images/business-card",
-                url: "https://github.com/DracFiendMG/business-card"
+                image: "../images/business-card.png",
+                url: "https://rainbow-cheesecake-f06f01.netlify.app/",
+                gitHubLink: "https://github.com/DracFiendMG/business-card"
             },
             {
                 title: "Birthday Site",
-                image: "../images/birthday-site",
-                url: "https://github.com/DracFiendMG/birthday-site"
+                image: "../images/birthday-site.jpg",
+                url: "https://sallus-birthday-site.netlify.app/",
+                gitHubLink: "https://github.com/DracFiendMG/birthday-site"
             },
             {
                 title: "Hometown Site",
-                image: "../images/hometown-site",
-                url: "https://github.com/DracFiendMG/hometown-site"
+                image: "../images/hometown-site.jpg",
+                url: "https://lighthearted-sfogliatella-607301.netlify.app/",
+                gitHubLink: "https://github.com/DracFiendMG/hometown-site"
             }
         ]
     },
@@ -42,9 +45,9 @@ const blogs = [
         title: "JavaScript Fundamentals",
         description: "Completed the JavaScript Fundamentals module in the Scrimba Full-Stack Developer Career Path. This module provided a solid foundation in JavaScript programming concepts and syntax.",
         content: [
-            "In this module, I delved into the core concepts of JavaScript programming. I started with understanding variables, data types (strings, numbers, booleans), and basic operators. Learning about functions was particularly exciting, as they are fundamental to writing reusable code.",
-            "I explored control flow using conditionals (if, else if, else) and loops (for, while) to create dynamic behavior in my programs. Arrays and objects were introduced as essential data structures for organizing and managing collections of data.",
-            "The module also covered important concepts like scope, hoisting, and the difference between var, let, and const. Understanding these concepts helped me write cleaner and more efficient code.",
+            "<p>In this module, I delved into the core concepts of JavaScript programming. I started with understanding variables, data types (strings, numbers, booleans), and basic operators. Learning about functions was particularly exciting, as they are fundamental to writing reusable code.</p>",
+            "<p>I explored control flow using conditionals (if, else if, else) and loops (for, while) to create dynamic behavior in my programs. Arrays and objects were introduced as essential data structures for organizing and managing collections of data.</p>",
+            "<p>The module also covered important concepts like scope, hoisting, and the difference between var, let, and const. Understanding these concepts helped me write cleaner and more efficient code.</p>",
             "<b>The hands-on projects brought these concepts to life:</b>",
             "<ul><li>Basketball Scoreboard - Built an interactive scoreboard using DOM manipulation and event listeners. I practiced updating the UI dynamically by incrementing scores with button clicks and learned how to reset state.",
             "<li>Password Generator - Created a random password generator that reinforced my understanding of arrays, loops, and Math.random(). I learned to work with character sets and string concatenation to build secure passwords.",
@@ -53,18 +56,21 @@ const blogs = [
         gitHubProjects: [
             {
                 title: "Basketball Scoreboard",
-                image: "../images/basketball-scoreboard",
-                url: "https://github.com/DracFiendMG/basketball-scoreboard"
+                image: "../images/basketball-scoreboard.jpg",
+                url: "https://basketball-scoreboard07.netlify.app/",
+                gitHubLink: "https://github.com/DracFiendMG/basketball-scoreboard"
             },
             {
                 title: "Password Generator",
-                image: "../images/password-generator",
-                url: "https://github.com/DracFiendMG/password-generator"
+                image: "../images/password-generator.jpg",
+                url: "https://storied-meringue-c847dc.netlify.app/",
+                gitHubLink: "https://github.com/DracFiendMG/password-generator"
             },
             {
                 title: "Unit Converter",
-                image: "../images/unit-converter",
-                url: "https://github.com/DracFiendMG/unit-converter"
+                image: "../images/unit-converter.jpg",
+                url: "https://calm-khapse-4040b6.netlify.app/",
+                gitHubLink: "https://github.com/DracFiendMG/unit-converter"
             }
         ]
     },
@@ -75,11 +81,11 @@ const blogs = [
         title: "Tools of the Trade",
         description: "Completed the Tools of the Trade module in the Scrimba Full-Stack Developer Career Path. This module introduced essential tools and workflows used in modern web development. It also covered the command line fundamentals, version control with Git and GitHub, and code editors.",
         content: [
-            "In this module, I learned about the various tools that are crucial for efficient web development. I started with version control using Git and GitHub, which allowed me to track changes in my code and collaborate with others effectively.",
-            "I also explored the command line interface (CLI), which is a powerful way to interact with my computer and manage files and directories. Learning basic commands like cd, ls, mkdir, and rm helped me navigate and manipulate my project files more efficiently.",
-            "The module also covered code editors, specifically Visual Studio Code (VS Code). I learned about useful extensions, themes, and settings that enhance productivity and make coding more enjoyable.",
-            "Git and GitHub were particularly exciting to learn. I practiced creating repositories, committing changes, branching, and merging. Understanding how to use pull requests and resolve merge conflicts was invaluable for collaborative projects.",
-            "Overall, this module provided me with a solid foundation in the essential tools and workflows used in modern web development. It has equipped me with the skills needed to work efficiently and effectively as a developer."
+            "<p>In this module, I learned about the various tools that are crucial for efficient web development. I started with version control using Git and GitHub, which allowed me to track changes in my code and collaborate with others effectively.</p>",
+            "<p>I also explored the command line interface (CLI), which is a powerful way to interact with my computer and manage files and directories. Learning basic commands like cd, ls, mkdir, and rm helped me navigate and manipulate my project files more efficiently.</p>",
+            "<p>The module also covered code editors, specifically Visual Studio Code (VS Code). I learned about useful extensions, themes, and settings that enhance productivity and make coding more enjoyable.</p>",
+            "<p>Git and GitHub were particularly exciting to learn. I practiced creating repositories, committing changes, branching, and merging. Understanding how to use pull requests and resolve merge conflicts was invaluable for collaborative projects.</p>",
+            "<p>Overall, this module provided me with a solid foundation in the essential tools and workflows used in modern web development. It has equipped me with the skills needed to work efficiently and effectively as a developer.</p>"
         ],
         gitHubProjects: []
     },
@@ -90,10 +96,10 @@ const blogs = [
         title: "Accessible Development",
         description: "In the Accessible Development module of the Scrimba Full-Stack Developer Career Path, I learned about the importance of creating inclusive web experiences for all users, including those with disabilities.",
         content: [
-            "This module emphasized the significance of web accessibility and how it impacts user experience. I explored various techniques and best practices to ensure that websites are usable by individuals with diverse abilities.",
-            "I learned about semantic HTML and how using proper elements enhances accessibility. For example, using <button> for clickable actions instead of <div> improves keyboard navigation and screen reader compatibility.",
-            "The module also covered ARIA (Accessible Rich Internet Applications) attributes, which provide additional context to assistive technologies. I practiced implementing ARIA roles, states, and properties to enhance the accessibility of dynamic content.",
-            "Color contrast and typography were also discussed, highlighting the importance of choosing accessible color schemes and readable fonts. I learned to use tools like the WebAIM Contrast Checker to evaluate color combinations.",
+            "<p>This module emphasized the significance of web accessibility and how it impacts user experience. I explored various techniques and best practices to ensure that websites are usable by individuals with diverse abilities.</p>",
+            "<p>I learned about semantic HTML and how using proper elements enhances accessibility. For example, using button for clickable actions instead of <div> improves keyboard navigation and screen reader compatibility.</p>",
+            "<p>The module also covered ARIA (Accessible Rich Internet Applications) attributes, which provide additional context to assistive technologies. I practiced implementing ARIA roles, states, and properties to enhance the accessibility of dynamic content.</p>",
+            "<p>Color contrast and typography were also discussed, highlighting the importance of choosing accessible color schemes and readable fonts. I learned to use tools like the WebAIM Contrast Checker to evaluate color combinations.</p>",
         ],
         gitHubProjects: []
     },
@@ -104,17 +110,18 @@ const blogs = [
         title: "Essential CSS",
         description: "Completed the Essential CSS module in the Scrimba Full-Stack Developer Career Path. This module deepened my understanding of CSS and its capabilities for styling web pages effectively.",
         content: [
-            "In this module, I explored advanced CSS concepts and techniques that allow for more sophisticated designs. I learned about the box model in greater detail, including margin collapsing and how to manipulate box dimensions using properties like width, height, padding, and border.",
-            "Flexbox was a major focus of this module. I practiced using flex containers and flex items to create responsive layouts that adapt to different screen sizes. Understanding properties like justify-content, align-items, and flex-wrap enabled me to build flexible and dynamic designs.",
-            "Alongside Flexbox, I also delved into the other varieties of display properties, such as absolute, relative, and fixed positioning. This knowledge allowed me to control the placement of elements on the page more precisely.",
-            "The module also covered CSS specificity and the cascade, helping me understand how styles are applied and overridden. I learned to write more efficient and maintainable CSS by organizing styles and using classes effectively.",
-            "Overall, this module enhanced my CSS skills significantly, enabling me to create visually appealing and responsive web designs."
+            "<p>In this module, I explored advanced CSS concepts and techniques that allow for more sophisticated designs. I learned about the box model in greater detail, including margin collapsing and how to manipulate box dimensions using properties like width, height, padding, and border.</p>",
+            "<p>Flexbox was a major focus of this module. I practiced using flex containers and flex items to create responsive layouts that adapt to different screen sizes. Understanding properties like justify-content, align-items, and flex-wrap enabled me to build flexible and dynamic designs.</p>",
+            "<p>Alongside Flexbox, I also delved into the other varieties of display properties, such as absolute, relative, and fixed positioning. This knowledge allowed me to control the placement of elements on the page more precisely.</p>",
+            "<p>The module also covered CSS specificity and the cascade, helping me understand how styles are applied and overridden. I learned to write more efficient and maintainable CSS by organizing styles and using classes effectively.</p>",
+            "<p>Overall, this module enhanced my CSS skills significantly, enabling me to create visually appealing and responsive web designs.</p>"
         ],
         gitHubProjects: [
             {
                 title: "Oldagram - An Instagram Clone",
-                image: "../images/basketball-scoreboard",
-                url: "https://github.com/username/oldagram"
+                image: "../images/unit-converter.jpg",
+                url: "https://darling-lily-855982.netlify.app/",
+                gitHubLink: "https://github.com/username/oldagram"
             }
         ]
     },
@@ -125,23 +132,31 @@ const blogs = [
         title: "Essential JavaScript",
         description: "Completed the Essential JavaScript module in the Scrimba Full-Stack Developer Career Path. This module expanded my JavaScript knowledge and introduced me to more complex programming concepts.",
         content: [
-            "In this module, I delved deeper into JavaScript programming, exploring advanced topics that are essential for building dynamic web applications. I learned about higher-order functions, which allow functions to accept other functions as arguments or return them as results. This concept is fundamental for functional programming and enables more abstract and reusable code.",
-            "I also explored array methods such as map, filter, and reduce, which provide powerful ways to manipulate and transform data collections. These methods helped me write cleaner and more efficient code when working with arrays.",
-            "The module covered object-oriented programming (OOP) principles, including the use of classes and prototypes. I learned how to create objects with properties and methods, encapsulating related functionality and promoting code organization.",
-            "I practiced using the for...of loop to iterate over arrays and strings, which provides a cleaner syntax compared to traditional for loops. Working with forms and handling user input was another key topic, teaching me how to capture and validate data from form elements.",
-            "The setTimeout() function was introduced for scheduling code execution after a delay, which is useful for creating timed behaviors in applications. I also learned about various array methods including forEach for iteration, map for transforming elements, filter for selecting elements based on conditions, includes for checking existence, and join for converting arrays to strings.",
-            "Short-circuit evaluation with && and || operators was covered, showing how to write concise conditional logic. The ternary operator (condition ? valueIfTrue : valueIfFalse) provided a compact way to write simple if-else statements inline, making my code more readable and efficient."
+            "<p>In this module, I delved deeper into JavaScript programming, exploring advanced topics that are essential for building dynamic web applications. I learned about higher-order functions, which allow functions to accept other functions as arguments or return them as results. This concept is fundamental for functional programming and enables more abstract and reusable code.</p>",
+            "<p>I also explored array methods such as map, filter, and reduce, which provide powerful ways to manipulate and transform data collections. These methods helped me write cleaner and more efficient code when working with arrays.</p>",
+            "<p>The module covered object-oriented programming (OOP) principles, including the use of classes and prototypes. I learned how to create objects with properties and methods, encapsulating related functionality and promoting code organization.</p>",
+            "<p>I practiced using the for...of loop to iterate over arrays and strings, which provides a cleaner syntax compared to traditional for loops. Working with forms and handling user input was another key topic, teaching me how to capture and validate data from form elements.</p>",
+            "<p>The setTimeout() function was introduced for scheduling code execution after a delay, which is useful for creating timed behaviors in applications. I also learned about various array methods including forEach for iteration, map for transforming elements, filter for selecting elements based on conditions, includes for checking existence, and join for converting arrays to strings.</p>",
+            "<p>Short-circuit evaluation with && and || operators was covered, showing how to write concise conditional logic. The ternary operator (condition ? valueIfTrue : valueIfFalse) provided a compact way to write simple if-else statements inline, making my code more readable and efficient.</p>"
         ],
         gitHubProjects: [
             {
-                title: "Meme Generator - Spiderman Edition (Pick your favorite Spiderman)",
-                image: "../images/basketball-scoreboard",
-                url: "https://github.com/DracFiendMG/mememaker"
+                title: "Image Generator - Spiderman Edition (Call A Spiderman For Help)",
+                image: "../images/mememaker.jpg",
+                url: "https://call-for-help.netlify.app/",
+                gitHubLink: "https://github.com/DracFiendMG/mememaker"
+            },
+            {
+                title: "Twimba - X Clone",
+                image: "../images/twimba.jpg",
+                url: "https://calm-cajeta-a22593.netlify.app/",
+                gitHubLink: "https://github.com/DracFiendMG/twimba"
             },
             {
                 title: "Restaurant Ordering App",
-                image: "../images/restaurant-ordering-app",
-                url: "https://github.com/DracFiendMG/restaurant-ordering-app"
+                image: "../images/restaurant-ordering-app.jpg",
+                url: "https://leafy-begonia-078dcd.netlify.app/",
+                gitHubLink: "https://github.com/DracFiendMG/restaurant-ordering-app"
             }
         ]
     },
@@ -152,19 +167,20 @@ const blogs = [
         title: "Responsive Design",
         description: "Completed the Responsive Design module in the Scrimba Full-Stack Developer Career Path. This module focused on creating web pages that adapt seamlessly to different screen sizes and devices.",
         content: [
-            "In this module, I learned the principles and techniques of responsive web design. I explored the use of media queries to apply different styles based on the viewport size, allowing for tailored layouts on mobile, tablet, and desktop devices.",
-            "I practiced using flexible grid systems and relative units (like percentages and ems) to create fluid layouts that adjust to the screen size. This approach ensures that content remains accessible and visually appealing across various devices.",
-            "The module also covered responsive images, teaching me how to use the srcset attribute and the picture element to serve appropriately sized images based on the device's resolution and viewport size. This optimization improves performance and user experience.",
-            "I learned about mobile-first design, which involves designing for smaller screens first and progressively enhancing the layout for larger screens. This strategy helps prioritize essential content and functionality for mobile users.",
-            "It also introduced me to the concept of breakpoints, which are specific viewport widths where the layout changes to accommodate different screen sizes. I practiced setting breakpoints in my CSS to create distinct layouts for various devices.",
-            "Grid layout was another key topic, providing a powerful way to create complex, two-dimensional layouts with rows and columns. I learned how to define grid containers and grid items, and how to control their placement using grid-template-areas, grid-template-rows, and grid-template-columns.",
-            "Overall, this module equipped me with the skills to build responsive web pages that provide an optimal viewing experience across a wide range of devices."
+            "<p>In this module, I learned the principles and techniques of responsive web design. I explored the use of media queries to apply different styles based on the viewport size, allowing for tailored layouts on mobile, tablet, and desktop devices.</p>",
+            "<p>I practiced using flexible grid systems and relative units (like percentages and ems) to create fluid layouts that adjust to the screen size. This approach ensures that content remains accessible and visually appealing across various devices.</p>",
+            "<p>The module also covered responsive images, teaching me how to use the srcset attribute and the picture element to serve appropriately sized images based on the device's resolution and viewport size. This optimization improves performance and user experience.</p>",
+            "<p>I learned about mobile-first design, which involves designing for smaller screens first and progressively enhancing the layout for larger screens. This strategy helps prioritize essential content and functionality for mobile users.</p>",
+            "<p>It also introduced me to the concept of breakpoints, which are specific viewport widths where the layout changes to accommodate different screen sizes. I practiced setting breakpoints in my CSS to create distinct layouts for various devices.</p>",
+            "<p>Grid layout was another key topic, providing a powerful way to create complex, two-dimensional layouts with rows and columns. I learned how to define grid containers and grid items, and how to control their placement using grid-template-areas, grid-template-rows, and grid-template-columns.</p>",
+            "<p>Overall, this module equipped me with the skills to build responsive web pages that provide an optimal viewing experience across a wide range of devices.</p>"
         ],
         gitHubProjects: [
             {
                 title: "Learning Journal - Responsive Redesign",
-                image: "../images/basketball-scoreboard",
-                url: "https://github.com/DracFiendMG/learning-journal"
+                image: "../images/learning-journal.jpg",
+                url: "",
+                gitHubLink: "https://github.com/DracFiendMG/learning-journal"
             }
         ]
     }

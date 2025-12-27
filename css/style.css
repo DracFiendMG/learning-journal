@@ -206,7 +206,6 @@ footer * {
     }
 
     .hero-post {
-        padding-top: 0;
         padding: 0 2rem 2rem;
         justify-content: flex-end;
     }

@@ -5,14 +5,30 @@ function renderBlogView() {
     const id = param.get("id")
 
     const blogObj = blogs.filter((blog) => id === blog.id)[0]
-    console.log(blogObj)
 
     const content = blogObj.content.map((point) => {
-        console.log(point)
-        return `<p>${point}</p>`
+        return `${point}`
     }).join('')
 
-    document.querySelector(".blog-section").innerHTML = `
+    console.log(content)
+
+    let projects = ''
+    if (blogObj.gitHubProjects.length > 0) {
+        projects = blogObj.gitHubProjects.map((project) => {
+            return `<li>${project.title} - <a href="${project.url}" target="_blank">View Project</a>`
+        }).join('')
+        
+        projects = `
+            <div class="projects">
+                <p><b>Project(s) Links:</b></p>
+                <ul>
+                    ${projects}
+                </ul>
+            </div>
+        `
+    }
+
+    document.querySelector(".blog-view").innerHTML = `
         <div class="headings">
             <p class="date">${blogObj.date}</p>
             <h2>${blogObj.title}</h2>
@@ -22,10 +38,7 @@ function renderBlogView() {
         <div class="content">
             ${content}
         </div>
-    `
-
-    document.querySelector(".projects-section").innerHTML = `
-        <img src="">
+        ${projects}
     `
 }
 

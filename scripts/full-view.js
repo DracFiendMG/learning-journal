@@ -3,6 +3,16 @@ import { blogs } from '../data/blogs.js'
 
 const recentPosts = blogs.filter((_, index) => index < 3)
 
+document.addEventListener('click', (e) => {
+    if (e.target.dataset.id) {
+        redirectToBlogView(e.target.dataset.id)
+    }
+})
+
+function redirectToBlogView(blogId) {
+    window.location.href = `blog-view.html?id=${blogId}`
+}
+
 function renderMain() {
     const aboutMe = about.aboutMe.map((item) => {
         const description = item.description.map((desc) => {
@@ -32,7 +42,7 @@ function renderMain() {
 
     document.querySelector(".blogs").innerHTML = recentPosts.map((blog) => {
         return `
-            <div class="blog">
+            <div class="blog" data-id="${blog.id}">
                 <img src="${blog.image}" alt="Laptop with a program opened on it's IDE">
                 <p class="date">${blog.date}</p>
                 <h1>${blog.title}</h1>
