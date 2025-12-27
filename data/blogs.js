@@ -2,20 +2,20 @@ import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
 
 const blogs = [
     {
-        id: uuidv4(),
+        id: getOrCreateId("blog_1"),
         date: "November 14, 2025",
         image: "../images/HTML_and_CSS.jpg",
         title: "HTML & CSS Fundamentals",
         description: "Completed the HTML & CSS Fundamentals module in the Scrimba Full-Stack Developer Career Path. It was an exciting experience that reinforced my understanding of web development basics.",
         content: [
-            "In this module, I learned the foundational building blocks of web development. Starting with HTML, I explored semantic elements like <header>, <nav>, <main>, <section>, and <footer> to create well-structured, accessible web pages. I practiced using headings, paragraphs, lists, links, and images to build meaningful content.",
+            "In this module, I learned the foundational building blocks of web development. Starting with HTML, I explored semantic elements like header, nav, main, section, and footer to create well-structured, accessible web pages. I practiced using headings, paragraphs, lists, links, and images to build meaningful content.",
             "On the CSS side, I discovered how to style elements using selectors, properties, and values. I learned about the box model (margin, border, padding, content), how to use flexbox for layout, and the importance of responsive design principles. Working with colors, fonts, and spacing helped me understand how to create visually appealing designs.",
             "The hands-on projects were incredibly valuable. Building a Business Card taught me about centering elements and working with borders. The Birthday Site project helped me practice background images and text styling. Finally, the Hometown Site brought everything together, allowing me to create a multi-section webpage with navigation.",
-            "Key takeaways:",
-            "• Semantic HTML improves accessibility and SEO",
-            "• CSS Flexbox makes layout much easier",
-            "• The cascade and specificity determine which styles apply",
-            "• Practice through building real projects is essential for learning"
+            "<b>Key takeaways:</b>",
+            "<ul><li>Semantic HTML improves accessibility and SEO",
+            "<li>CSS Flexbox makes layout much easier",
+            "<li>The cascade and specificity determine which styles apply",
+            "<li>Practice through building real projects is essential for learning<ul>"
         ],
         gitHubProjects: [
             {
@@ -33,7 +33,7 @@ const blogs = [
         ]
     },
     {
-        id: uuidv4(),
+        id: getOrCreateId("blog_2"),
         date: "November 20, 2025",
         image: "../images/JS_Fundamentals.jpg",
         title: "JavaScript Fundamentals",
@@ -42,10 +42,10 @@ const blogs = [
             "In this module, I delved into the core concepts of JavaScript programming. I started with understanding variables, data types (strings, numbers, booleans), and basic operators. Learning about functions was particularly exciting, as they are fundamental to writing reusable code.",
             "I explored control flow using conditionals (if, else if, else) and loops (for, while) to create dynamic behavior in my programs. Arrays and objects were introduced as essential data structures for organizing and managing collections of data.",
             "The module also covered important concepts like scope, hoisting, and the difference between var, let, and const. Understanding these concepts helped me write cleaner and more efficient code.",
-            "The hands-on projects brought these concepts to life:",
-            "• Basketball Scoreboard - Built an interactive scoreboard using DOM manipulation and event listeners. I practiced updating the UI dynamically by incrementing scores with button clicks and learned how to reset state.",
-            "• Password Generator - Created a random password generator that reinforced my understanding of arrays, loops, and Math.random(). I learned to work with character sets and string concatenation to build secure passwords.",
-            "• Unit Converter - Developed a utility that converts between different units of measurement. This project helped me practice working with user input, performing calculations, and displaying formatted output."
+            "<b>The hands-on projects brought these concepts to life:</b>",
+            "<ul><li>Basketball Scoreboard - Built an interactive scoreboard using DOM manipulation and event listeners. I practiced updating the UI dynamically by incrementing scores with button clicks and learned how to reset state.",
+            "<li>Password Generator - Created a random password generator that reinforced my understanding of arrays, loops, and Math.random(). I learned to work with character sets and string concatenation to build secure passwords.",
+            "<li>Unit Converter - Developed a utility that converts between different units of measurement. This project helped me practice working with user input, performing calculations, and displaying formatted output.</li></ul>"
         ],
         gitHubProjects: [
             {
@@ -63,9 +63,9 @@ const blogs = [
         ]
     },
     {
-        id: uuidv4(),
+        id: getOrCreateId("blog_3"),
         date: "November 21, 2025",
-        image: "../images/Tools_of_the_Trade.png",
+        image: "../images/Tools_of_the_Trade.jpg",
         title: "Tools of the Trade",
         description: "Completed the Tools of the Trade module in the Scrimba Full-Stack Developer Career Path. This module introduced essential tools and workflows used in modern web development. It also covered the command line fundamentals, version control with Git and GitHub, and code editors.",
         content: [
@@ -78,7 +78,7 @@ const blogs = [
         gitHubProjects: []
     },
     {
-        id: uuidv4(),
+        id: getOrCreateId("blog_4"),
         date: "November 23, 2025",
         image: "../images/Accessible_Development.jpg",
         title: "Accessible Development",
@@ -92,7 +92,7 @@ const blogs = [
         gitHubProjects: []
     },
     {
-        id: uuidv4(),
+        id: getOrCreateId("blog_5"),
         date: "November 27, 2025",
         image: "../images/Essential_CSS.jpg",
         title: "Essential CSS",
@@ -112,7 +112,7 @@ const blogs = [
         ]
     },
     {
-        id: uuidv4(),
+        id: getOrCreateId("blog_6"),
         date: "December 18, 2025",
         image: "../images/Essential_JS.png",
         title: "Essential JavaScript",
@@ -137,7 +137,7 @@ const blogs = [
         ]
     },
     {
-        id: uuidv4(),
+        id: getOrCreateId("blog_7"),
         date: "December 27, 2025",
         image: "../images/Responsive_Design.jpg",
         title: "Responsive Design",
@@ -159,5 +159,17 @@ const blogs = [
         ]
     }
 ]
+
+function getOrCreateId(key) {
+    const id = localStorage.getItem(`id_${key}`)
+
+    if (id) {
+        return id
+    } else {
+        const newId = uuidv4()
+        localStorage.setItem(`id_${key}`, newId)
+        return newId
+    }
+}
 
 export { blogs }

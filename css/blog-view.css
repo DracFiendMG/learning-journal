@@ -1,0 +1,28 @@
+.blog-section {
+    display: grid;
+    grid-template-columns: 1em 1fr 1em;
+    grid-template-areas: 
+        ". headings ."
+        ". b-image ."
+        ". content .";
+}
+
+.headings {
+    grid-area: headings;
+}
+
+.blog-image {
+    grid-area: b-image;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.content {
+    grid-area: content;
+    color: #505050;
+}
+
+.project-section {
+    display: grid;
+    grid-template-columns: 1fr;
+}

@@ -43,7 +43,7 @@ h1 {
     font-size: 0.875em;
 }
 
-ul {
+header ul {
     display: flex;
     justify-content: flex-end;
     gap: 2em;
