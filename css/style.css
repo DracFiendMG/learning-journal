@@ -96,7 +96,8 @@ main {
     justify-content: flex-end;
     align-items: end;
     padding: 0 1em 1em;
-    background-image: url('../images/hero-post-bg.png');
+    /* background-image: url('../images/hero-post-bg.png'); */
+    background-image: url('../images/laptop-dark.jpg');
     background-size: cover;
     background-position: bottom;
     transform: scaleX(-1);
@@ -117,6 +118,10 @@ main {
 .blog p
 {
     margin: 0;
+}
+
+.blog p {
+    color: #505050;
 }
 
 .hero-post h1 {
@@ -140,6 +145,14 @@ main {
     grid-template-columns: 1fr;
     margin: 1em;
     gap: 2.5rem;
+}
+
+.blog * {
+    pointer-events: none;
+}
+
+.blog {
+    cursor: pointer;
 }
 
 .blog img, .hero-post-img {

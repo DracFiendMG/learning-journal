@@ -2,23 +2,26 @@ const about = {
     name: "Sreeram",
     title: "My new journey as a Scrimba student.",
     introduction: `Hi there! My name is Sreeram and welcome to my learning journal.`,
-    description: "After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.",
+    description: "I've been working as a software developer for several years now. Recently, I decided to take my skills to the next level by enrolling in the Scrimba Full-Stack Developer Career Path. This learning journal documents my journey, experiences, and the projects I build along the way.",
     profileImg: "./images/profile-img.png",
     profileImgAlt: "",
-    date: "November 10, 2025",
+    date: "December 27, 2025",
     aboutMe: [
         {
             title: "How I stay committed to learning",
             description: [
-                "I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try to create simple projects using what I learned or work new techniques into existing projects.",
-                "While that was fun, I felt like it would be helpful to share what I was learning and most things about my journey with the world."
+                "As a software developer, I understand the importance of continuous learning and staying up-to-date with the latest technologies and trends in the industry. However, I also know how challenging it can be to stay committed to learning, especially when juggling work and personal life.",
+                "To overcome this challenge, I've developed a few strategies that help me stay focused and motivated. First, I set clear goals for what I want to achieve in my learning journey. This helps me stay focused and gives me a sense of direction.",
+                "Second, I make learning a part of my daily routine. Whether it's dedicating a specific time each day to study or incorporating learning into my work tasks, I find that consistency is key to making progress.",
+                "Finally, I stay accountable by sharing my learning journey with others. Whether it's through this learning journal or by joining online communities, I find that having a support system helps me stay motivated and committed to my goals."
             ]
         },
         {
             title: "How I got started",
             description: [
-                "I started simple and gradually grew my learning journal site. I would take notes about what I was learning. After each learning session, I'd use my notes to not only reflect on what I learned but also write short summaries of what I learned using my own words.",
-                "That helped me grok what I was learning, and I realized that posting my learning summaries was also helping others learn and stay motivated."
+                "I came across Scrimba while I was searching for roadmaps to level up my full-stack development skills. That's when I discovered 'roadmap.sh', which led me to Scrimba's Full-Stack Developer Career Path.",
+                "Intrigued by the curriculum and the interactive learning approach, I decided to enroll in the program. Since then, I've been thoroughly enjoying the learning experience and making steady progress towards my goals.",
+                "I'm excited to continue this journey and see where it takes me!"
             ]
         }
     ]
