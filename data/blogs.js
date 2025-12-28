@@ -179,7 +179,7 @@ const blogs = [
             {
                 title: "Learning Journal - Responsive Redesign",
                 image: "../images/learning-journal.jpg",
-                url: "",
+                url: "https://sreerams-learning-journal.netlify.app/",
                 gitHubLink: "https://github.com/DracFiendMG/learning-journal"
             }
         ]

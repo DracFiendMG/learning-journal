@@ -36,7 +36,7 @@ nav {
 }
 
 .icon {
-    width: 23px;
+    width: 1.5em;
 }
 
 h1 {
@@ -118,6 +118,8 @@ li a:active,
 main {
     grid-area: main;
     padding-bottom: 1em;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .journal-section {
@@ -232,6 +234,10 @@ footer p:first-child {
 
 footer * {
     margin: 0;
+}
+
+footer a {
+    color: inherit;
 }
 
 @media (max-width: 500px) {

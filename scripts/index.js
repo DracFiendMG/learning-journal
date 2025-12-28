@@ -38,6 +38,10 @@ function redirectToBlogView(blogId) {
     window.location.href = `blog-view.html?id=${blogId}`
 }
 
+function renderCopyrightYear() {
+    document.querySelector('.copyright').textContent = `Copyright ©${new Date().getUTCFullYear()}`
+}
+
 function renderMain() {
     document.querySelector(".hero-post").innerHTML = `
         <p class="date">${about.date}</p>
@@ -60,3 +64,4 @@ function renderMain() {
 }
 
 renderMain()
+renderCopyrightYear()

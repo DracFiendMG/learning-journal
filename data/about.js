@@ -23,6 +23,21 @@ const about = {
                 "Intrigued by the curriculum and the interactive learning approach, I decided to enroll in the program. Since then, I've been thoroughly enjoying the learning experience and making steady progress towards my goals.",
                 "I'm excited to continue this journey and see where it takes me!"
             ]
+        },
+        {
+            title: "My goals for the Career Path",
+            description: [
+                "My primary goal for enrolling in the Scrimba Full-Stack Developer Career Path is to enhance my skills and knowledge in full-stack development. I want to become proficient in both front-end and back-end technologies, and gain hands-on experience building real-world applications.",
+                "Additionally, I hope to expand my professional network and connect with other developers in the industry. By sharing my learning journey through this journal, I aim to inspire and motivate others who are also on a similar path.",
+                "Ultimately, my goal is to become a well-rounded and skilled full-stack developer, capable of taking on complex projects and contributing to the tech community."
+            ]
+        },
+        {
+            title: "Want to connect?",
+            description: [
+                "I'd love to connect with fellow developers and like-minded individuals! Feel free to reach out to me on my GitHub profile or connect with me on LinkedIn. Let's share our experiences, learn from each other, and grow together in this exciting field of software development.",
+                "You can find me on <a href='https://github.com/dracfiendmg' target='_blank' rel='noopener noreferrer'>GitHub</a> and on <a href='https://www.linkedin.com/in/sreeram-17ba861a4/' target='_blank'>LinkedIn</a>."
+            ]
         }
     ]
 }
