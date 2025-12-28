@@ -198,4 +198,6 @@ function getOrCreateId(key) {
     }
 }
 
+blogs.reverse()
+
 export { blogs }

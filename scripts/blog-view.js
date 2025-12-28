@@ -40,6 +40,17 @@ function renderBlogView() {
         </div>
         ${projects}
     `
+
+    document.querySelector(".blogs").innerHTML = blogs.map((blog) => {
+        return `
+            <div class="blog" data-id="${blog.id}">
+                <img src="${blog.image}" alt="Laptop with a program opened on it's IDE">
+                <p class="date">${blog.date}</p>
+                <h1>${blog.title}</h1>
+                <p>${blog.description}</p>
+            </div>
+        `
+    }).join('')
 }
 
 renderBlogView()

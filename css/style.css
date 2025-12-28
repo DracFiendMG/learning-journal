@@ -177,6 +177,10 @@ main {
     cursor: pointer;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 /* footer */
 footer {
     font-size: 0.75em;
@@ -196,6 +200,10 @@ footer * {
 }
 
 @media (min-width: 768px) {
+    body {
+        font-size: 1.25em;
+    }
+
     nav {
         padding: 1em 3.25em;
     }
