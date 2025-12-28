@@ -1,5 +1,15 @@
 import { blogs } from '../data/blogs.js'
 
+document.addEventListener('click', (e) => {
+    if (e.target.dataset.id) {
+        redirectToBlogView(e.target.dataset.id)
+    }
+})
+
+function redirectToBlogView(blogId) {
+    window.location.href = `blog-view.html?id=${blogId}`
+}
+
 function renderBlogView() {
     const param = new URLSearchParams(window.location.search)
     const id = param.get("id")
@@ -9,8 +19,6 @@ function renderBlogView() {
     const content = blogObj.content.map((point) => {
         return `${point}`
     }).join('')
-
-    console.log(content)
 
     let projects = ''
     if (blogObj.gitHubProjects.length > 0) {
@@ -41,7 +49,7 @@ function renderBlogView() {
         ${projects}
     `
 
-    document.querySelector(".blogs").innerHTML = blogs.map((blog) => {
+    document.querySelector(".blogs").innerHTML = blogs.filter(blog => blog.id !== id).map((blog) => {
         return `
             <div class="blog" data-id="${blog.id}">
                 <img src="${blog.image}" alt="Laptop with a program opened on it's IDE">

@@ -41,11 +41,6 @@
     margin-bottom: 0;
 }
 
-.blogs-section h2 {
-    font-size: 1em;
-    text-align: center;
-}
-
 @media (min-width: 768px) {
     .journal-section {
         height: auto;
@@ -68,7 +63,7 @@
         height: 488px;
     }
 
-    .hero-post-content h2, .blogs-section h2 {
+    .hero-post-content h2 {
         font-size: 1.5em;
     }
 }

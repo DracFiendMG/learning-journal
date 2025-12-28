@@ -140,6 +140,11 @@ main {
 
 /* Blogs Section */
 
+.blogs-section h2 {
+    font-size: 1em;
+    text-align: center;
+}
+
 .blogs {
     display: grid;
     grid-template-columns: 1fr;
@@ -211,6 +216,10 @@ footer * {
     .journal-section {
         height: 488px;
         background-position: 100% 75%;
+    }
+
+    .blogs-section h2 {
+        font-size: 1.5em;
     }
 
     .hero-post {
