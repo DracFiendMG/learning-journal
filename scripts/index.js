@@ -12,7 +12,7 @@ document.addEventListener('click', (e) => {
     if (e.target.dataset.id) {
         redirectToBlogView(e.target.dataset.id)
     } else if (e.target.id === 'view-more') {
-        viewMore.classList.add("hidden")
+        viewMore.style.display = 'none'
         blogsList = blogs
         renderMain()
     } else if (e.target.id === 'hamburger') {
