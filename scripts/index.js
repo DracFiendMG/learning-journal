@@ -1,6 +1,7 @@
 import { about } from '../data/about.js'
 import { blogs } from '../data/blogs.js'
 
+const navLinks = document.querySelector('#nav-links')
 const viewMore = document.querySelector("#view-more")
 const mediaQueryString = '(min-width: 768px)'
 const mediaQueryList = window.matchMedia(mediaQueryString)
@@ -14,6 +15,10 @@ document.addEventListener('click', (e) => {
         viewMore.classList.add("hidden")
         blogsList = blogs
         renderMain()
+    } else if (e.target.id === 'hamburger') {
+        navLinks.style.width = '40%'
+    } else if (e.target.id === 'xmark') {
+        navLinks.style.width = '0%'
     }
 })
 

@@ -1,11 +1,16 @@
 import { about } from '../data/about.js'
 import { blogs } from '../data/blogs.js'
 
+const navLinks = document.querySelector('#nav-links')
 const recentPosts = blogs.filter((_, index) => index < 3)
 
 document.addEventListener('click', (e) => {
     if (e.target.dataset.id) {
         redirectToBlogView(e.target.dataset.id)
+    } else if (e.target.id === 'hamburger') {
+        navLinks.style.width = '40%'
+    } else if (e.target.id === 'xmark') {
+        navLinks.style.width = '0%'
     }
 })
 

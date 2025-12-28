@@ -6,6 +6,10 @@
     border-radius: 50%;
 }
 
+.introduction h1 {
+    margin-bottom: 1rem;
+}
+
 @media (min-width: 768px) {
     .hero-post {
         grid-template-areas: 
